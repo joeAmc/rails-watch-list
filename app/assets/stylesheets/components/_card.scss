@@ -56,6 +56,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+
 }
 
 .card-bookmark {
@@ -66,7 +67,13 @@ a:hover {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
+
+.card-bookmark:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
 
 .card-bookmark img {
   height: 100%;
@@ -101,7 +108,29 @@ a:hover {
   padding: 16px;
 }
 
+@media(max-width: 992px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+@media(max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 992px) {
+  .container-bookmark {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .container-bookmark {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 // .card > img {

@@ -25,12 +25,11 @@
 <div class="cards-container">
   <% @lists.each do |list| %>
     <div class="card align-items-center justify-content-center">
-      <h4><%= link_to list.name, list_path(list) %></h4>
-      <%= link_to 'delete',
-              list_path(list),
-              method: :delete,
-              data: {confirm: 'are you sure?'}, class: 'btn btn-danger btn-sm'%>
-      <%# <img src="https://source.unsplash.com/random"/> %>
+        <h4><%= link_to list.name, list_path(list) %></h4>
+        <%= link_to 'delete',
+                list_path(list),
+                method: :delete,
+                data: {confirm: 'are you sure?'}, class: 'btn btn-danger btn-sm'%>
     </div>
   <% end %>
 </div>
