@@ -1,0 +1,19 @@
+.banner {
+  background-image: image-url('arne_1200x750');
+  width: 100vw;
+  height: 50vh;
+  margin-bottom: 32px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+// .banner {
+//   background-size: cover;
+//   background-position: center;
+//   padding: 150px 0;
+// }
+
+.banner h1 {
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+}

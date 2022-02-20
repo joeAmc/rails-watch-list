@@ -2,3 +2,16 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+@import "banner";
+@import "card";
+@import "form";
+@import url('https://fonts.google.com/share?selection.family=Lobster%7COpen%20Sans:wght@700');
+
+h1, a, p, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+
+.banner, h1 {
+ color: white;
+}

@@ -2,5 +2,7 @@
 <%= simple_form_for [@list, @bookmark] do |f| %>
   <%= f.association :movie, collection: Movie.all %>
   <%= f.input :comment %>
-  <%= f.submit  %>
+  <%= f.submit 'Add movie', class: 'btn btn-success' %>
 <% end %>
+
+<%= link_to 'Cancel', list_path(@list), class: 'btn btn-success' %>

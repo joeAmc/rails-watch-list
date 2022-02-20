@@ -9,7 +9,7 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.new(strong_params)
     @bookmark.list = @list
     if @bookmark.save
-      redirect_to list_path(@list), notice: 'Your new bookmark is created nerd'
+      redirect_to list_path(@list), notice: 'Your new bookmark is created'
     else
       render :new
     end

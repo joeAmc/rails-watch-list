@@ -1,7 +1,37 @@
-<h1>List</h1>
-<ul>
+
+<%# <div class="container">
+  <div class="container">
+    <h1>Your Movie List</h1>
+  </div>
+</div> %>
+
+<div class="banner d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <h1>Your Movies</h1>
+    <%= link_to 'Add Category', new_list_path, class: 'btn btn-danger' %>
+  </div>
+</div>
+
+<%# <div class="container p-2">
+  <div class="row row-cols-3 ">
+      <% @lists.each do |list| %>
+          <%# <div class="card d-flex align-items-center justify-content-center">
+            <h4><%= link_to list.name, list_path(list) %>
+          <%# </div>
+      <% end %>
+  <%# </div> %>
+<%# </div> %>
+
+<div class="cards-container">
   <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
+    <div class="card align-items-center justify-content-center">
+      <h4><%= link_to list.name, list_path(list) %></h4>
+      <p class="btn btn-outline-danger btn-sm"><%= link_to 'delete',
+              lists_path(list),
+              method: :delete,
+              data: {confirm: '  you sure?'}, class: 'btn'%>
+      </p>
+      <%# <img src="https://source.unsplash.com/random"/> %>
+    </div>
   <% end %>
-</ul>
-<p><%= link_to 'Add List', new_list_path(@list), class: 'btn btn-success mt-4' %></p>
+</div>
