@@ -6,7 +6,7 @@
 
 .cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 
@@ -19,6 +19,7 @@
   text-decoration: none;
   margin-bottom: 32px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 }
 
 .card:hover {
@@ -29,7 +30,7 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
-  position: absolute;
+  vertical-align: top;
 }
 
 
