@@ -1,12 +1,12 @@
 <div class="banner d-flex align-items-center justify-content-center">
   <div class="text-start">
     <div class="form-list">
-  <%= simple_form_for (@list) do |f| %>
-      <%=f.input :name%>
-      <%= f.submit 'Submit', class: 'btn btn-primary' %>
-      <%= link_to 'Cancel', lists_path(@list), class: 'btn btn-outline-primary' %>
-  <% end %>
-</div>
-
+      <%= simple_form_for (@list) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        <%= link_to 'Cancel', lists_path(@list), class: 'btn btn-outline-primary' %>
+      <% end %>
+    </div>
   </div>
 </div>
