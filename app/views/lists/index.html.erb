@@ -24,7 +24,9 @@
 
 <div class="cards-container">
   <% @lists.each do |list| %>
+
     <div class="card align-items-center justify-content-center">
+        <%= image_tag "arne.jpg" %>
         <h4><%= link_to list.name, list_path(list) %></h4>
         <%= link_to 'delete',
                 list_path(list),
@@ -33,3 +35,6 @@
     </div>
   <% end %>
 </div>
+
+  <%= cl_image_tag("yqlblffyclhtvyyqy7hp",
+      width: 400, height: 300, crop: :fill) %>

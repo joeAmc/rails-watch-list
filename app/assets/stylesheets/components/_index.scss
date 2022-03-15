@@ -7,6 +7,10 @@
 @import "form";
 @import url('https://fonts.google.com/share?selection.family=Lobster%7COpen%20Sans:wght@700');
 
+body {
+  background-color: black;
+}
+
 h1, a, p, h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
