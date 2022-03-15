@@ -1,0 +1,143 @@
+// .cards-container {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   justify-content: center;
+// }
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.card {
+  width: 280px;
+  height: 400px;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 32px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+.card p {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+}
+
+
+a:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+.card-btn {
+ margin: -114px;
+ position: absolute;
+}
+
+.container-bookmark {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.card-bookmark {
+  width: 80vh;
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.card-bookmark:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.card-bookmark img {
+  height: 100%;
+  width: 170px;
+  object-fit: cover;
+}
+
+.card-bookmark h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-bookmark p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bm-p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .5;
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.card-bookmark .card-info {
+  padding: 16px;
+}
+
+@media(max-width: 992px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 992px) {
+  .container-bookmark {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .container-bookmark {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+// .card > img {
+//   height: 200px;
+//   width: 100%;
+//   object-fit: cover;
+// }

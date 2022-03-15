@@ -1,0 +1,40 @@
+
+<%# <div class="container">
+  <div class="container">
+    <h1>Your Movie List</h1>
+  </div>
+</div> %>
+
+<div class="banner d-flex align-items-center justify-content-center">
+  <div class="text-center">
+    <h1>Your Movies</h1>
+    <%= link_to 'Add Category', new_list_path, class: 'btn btn-danger' %>
+  </div>
+</div>
+
+<%# <div class="container p-2">
+  <div class="row row-cols-3 ">
+      <% @lists.each do |list| %>
+          <%# <div class="card d-flex align-items-center justify-content-center">
+            <h4><%= link_to list.name, list_path(list) %>
+          <%# </div>
+      <% end %>
+  <%# </div> %>
+<%# </div> %>
+
+<div class="cards-container">
+  <% @lists.each do |list| %>
+
+    <div class="card align-items-center justify-content-center">
+        <%= image_tag "arne.jpg" %>
+        <h4><%= link_to list.name, list_path(list) %></h4>
+        <%= link_to 'delete',
+                list_path(list),
+                method: :delete,
+                data: {confirm: 'are you sure?'}, class: 'btn btn-danger btn-sm'%>
+    </div>
+  <% end %>
+</div>
+
+  <%= cl_image_tag("yqlblffyclhtvyyqy7hp",
+      width: 400, height: 300, crop: :fill) %>

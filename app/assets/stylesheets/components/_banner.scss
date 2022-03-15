@@ -1,0 +1,26 @@
+.banner {
+  background-image: image-url('banner');
+  background-size: 100% 180%;
+  width: 100vw;
+  height: 50vh;
+  margin-bottom: 32px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+// .banner {
+//   background-size: cover;
+//   background-position: center;
+//   padding: 150px 0;
+// }
+
+.banner h1 {
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.text-center {
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  padding: 36px;
+}
