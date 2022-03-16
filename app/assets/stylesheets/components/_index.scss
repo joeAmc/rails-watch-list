@@ -5,10 +5,11 @@
 @import "banner";
 @import "card";
 @import "form";
+@import "list-card";
 @import url('https://fonts.google.com/share?selection.family=Lobster%7COpen%20Sans:wght@700');
 
 body {
-  background-color: black;
+  background-image: linear-gradient(rgb(7, 7, 7), rgb(51, 50, 50), rgb(7, 7, 7));
 }
 
 h1, a, p, h4 {
@@ -19,3 +20,7 @@ h1, a, p, h4 {
 .banner, h1 {
  color: white;
 }
+
+.h2{
+  color: white;
+ }

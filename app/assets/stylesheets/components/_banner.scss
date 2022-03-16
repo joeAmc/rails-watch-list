@@ -1,10 +1,11 @@
 .banner {
-  background-image: image-url('banner');
-  background-size: 100% 180%;
-  width: 100vw;
-  height: 50vh;
-  margin-bottom: 32px;
+  width: 15vw;
+  height: 100vh;
   box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+
 }
 
 // .banner {
@@ -13,14 +14,19 @@
 //   padding: 150px 0;
 // }
 
-.banner h1 {
+.banner h2 {
   color: white;
-  font-size: 65px;
+  font-size: 54px;
   font-weight: bold;
+  font-family: 'Lobster', cursive;
+  margin: 0px;
+  position: absolute;
 }
 
-.text-center {
-  background-color: rgba(0,0,0,0.5);
-  width: 100vw;
-  padding: 36px;
+
+.banner img{font-family: 'Lobster', cursive;
+
+  width: 27vw;
+  height: auto;
+  margin-left: -57px;
 }

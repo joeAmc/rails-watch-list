@@ -8,11 +8,11 @@
 
 require 'faker'
 
-5.times do
+10.times do
   movie = Movie.create(
     title: Faker::Movie.title,
     overview: Faker::Quote.famous_last_words,
-    poster_url: 'https://source.unsplash.com/random',
+    # poster_url: 'https://source.unsplash.com/random',
     rating: rand(0..10).to_f
   )
 end
