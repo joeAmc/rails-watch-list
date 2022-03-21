@@ -4,15 +4,17 @@
     <h1>Your Movie List</h1>
   </div>
 </div> %>
-
-<div class="banner">
-  <%= image_tag "film-reel.png" %>
-  <div class="banner-text">
-    <h2 style="transform: rotate(-90deg);">Movie Night</h2>
+<div class="container">
+  <div class="banner">
+    <%= image_tag 'film-reel' %>
+    <h1>Movie Night</h1>
+    <%# <%= link_to 'Add Category', new_list_path, class: 'btn btn-danger' %>
   </div>
-  <%# <%= link_to 'Add Category', new_list_path, class: 'btn btn-danger' %>
-</div>
 
+  <div class="main-body">
+    <h1>Categories</h1>
+  </div>
+</div>
 <%# <div class="container p-2">
   <div class="row row-cols-3 ">
       <% @lists.each do |list| %>
