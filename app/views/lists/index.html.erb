@@ -4,14 +4,17 @@
     <h1>Your Movie List</h1>
   </div>
 </div> %>
+<div class="container">
+  <div class="banner">
+    <%= image_tag 'film-reel' %>
+    <h1>Movie Night</h1>
+    <%# <%= link_to 'Add Category', new_list_path, class: 'btn btn-danger' %>
+  </div>
 
-<div class="banner d-flex align-items-center justify-content-center">
-  <div class="text-center">
-    <h1>Your Movies</h1>
-    <%= link_to 'Add Category', new_list_path, class: 'btn btn-danger' %>
+  <div class="main-body">
+    <h1>Categories</h1>
   </div>
 </div>
-
 <%# <div class="container p-2">
   <div class="row row-cols-3 ">
       <% @lists.each do |list| %>
@@ -22,15 +25,15 @@
   <%# </div> %>
 <%# </div> %>
 
-<div class="cards-container">
+<div class="list-container">
   <% @lists.each do |list| %>
-    <div class="card">
-        <%= image_tag "arne.jpg" %>
-        <h4><%= link_to list.name, list_path(list) %></h4>
-        <%= link_to 'delete',
-                list_path(list),
-                method: :delete,
-                data: {confirm: 'are you sure?'}, class: 'btn btn-danger btn-sm'%>
+    <div class="list-card">
+      <%# <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+      <h4><%= link_to list.name, list_path(list), class: "color: black;" %></h4>
+      <%= link_to 'delete',
+        list_path(list),
+        method: :delete,
+        data: {confirm: 'are you sure?'}, class: "btn btn-primary" %>
     </div>
   <% end %>
 </div>
