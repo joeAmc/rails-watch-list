@@ -1,8 +1,66 @@
 
-.list-container{
 
+// .cards-container {
+//   display: grid;
+//   grid-template-columns: repeat(5, 1fr);
+//   grid-gap: 16px;
+//   justify-items: center;
+//   grid-auto-flow: column;
+// }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  justify-items: center;
 }
 
-.list-card {
+.films {
+  width: 273px;
+  height: 330px;
+  border: none;
+  text-decoration: none;
+  background-color: rgb(3, 3, 3);
+}
 
+.films img {
+  width: 100%;
+  object-fit: cover;
+  margin-left: 0;
+  height: 200px;
+  width: 100%;
+}
+
+.plus {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 0px 0px 0px 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    font-size: 31px;
+    color: white;
+  }
+}
+
+.card-text {
+  padding: 8px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.card-text {
+  padding: 8px;
+  .cat:hover {
+   color: #fcfbf8;
+   text-shadow: #f8dc95 1px 0 10px;
+  }
 }

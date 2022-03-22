@@ -3,6 +3,7 @@ class ListsController < ApplicationController
 
   def index
     @lists = List.all
+    @list = List.new
   end
 
   def show
@@ -10,12 +11,11 @@ class ListsController < ApplicationController
   end
 
   def new
-    @list = List.new
+    @lists = List.new
   end
 
   def create
     @list = List.new(list_params)
-
     if @list.save
       redirect_to list_path(@list)
     else
