@@ -1,26 +1,48 @@
 // Import your components CSS files here.
-@import "alert";
-@import "avatar";
-@import "navbar";
 @import "banner";
 @import "card";
 @import "form";
 @import "list-card";
-@import url('https://fonts.google.com/share?selection.family=Lobster%7COpen%20Sans:wght@700');
 
 body {
   background-image: linear-gradient(rgb(7, 7, 7), rgb(51, 50, 50), rgb(7, 7, 7));
+  width: 100%;
+   height: 100%;
+   overflow: hidden;
 }
 
-h1, a, p, h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-}
-
-.banner, h1 {
- color: white;
-}
-
-.h2{
+h3, p, h5{
   color: white;
- }
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+
+.cont {
+  display: flex;
+}
+
+.main-body {
+  flex-grow: 1;
+  // background-color: rgba($color: #fcf9f9, $alpha: 0.7);
+}
+
+.main-body {
+  h1{
+    background-image: $h1color;
+    background-clip: text;
+    color: transparent;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: $h1font;
+    margin-top: 24px;
+    margin-left: 60px;
+    height: 112px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
