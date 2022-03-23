@@ -4,6 +4,8 @@ class ListsController < ApplicationController
   def index
     @lists = List.all
     @list = List.new
+    @books = @list.bookmarks
+    @bookmarks = Bookmark.where(@books)
   end
 
   def show

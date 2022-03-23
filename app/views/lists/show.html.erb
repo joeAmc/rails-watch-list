@@ -19,12 +19,13 @@
         <div class="bms">
           <%= cl_image_tag bookmark.photo.key %>
           <div class="bms-text">
-            <h4><%= bookmark.movie.title %></h4>
-            <p>"<%= bookmark.comment %>"</p>
+            <h4 style="font-family: 'Lobster', cursive; font-size: 38px; color: white;"><%= bookmark.movie.title %></h4>
+            <p style="font-weight: 100;"><%= bookmark.movie.overview %></p>
+            <p style="color: grey;">"<%= bookmark.comment %>"</p>
             <%= link_to "Delete",
                   bookmark_path(bookmark),
                   method: :delete,
-                  data: { confirm: "Are you sure?" }, class: 'btn btn-outline-danger btn-sm' %>
+                  data: { confirm: "Are you sure?" }, class: 'btn btn-outline-danger btn-sm', style: 'position: absolute; margin-top: -8px;' %>
           </div>
         </div>
       <% end %>

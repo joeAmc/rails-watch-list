@@ -15,21 +15,24 @@
   justify-items: center;
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 100px;
+  position: relative;
 }
 
 .bms {
   width: 500px;
-  height: 330px;
+  height: 450px;
   border: none;
   text-decoration: none;
   background-color: rgb(3, 3, 3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
 .bms img {
   width: 100%;
   object-fit: cover;
   margin-left: 0;
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 
@@ -49,7 +52,7 @@
 }
 
 .bms-text {
-  padding: 8px;
+  padding: 8px 16px;
   a {
     color: white;
     text-decoration: none;

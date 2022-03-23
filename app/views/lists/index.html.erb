@@ -56,7 +56,7 @@
           <%= cl_image_tag list.photo.key %>
           <div class="card-text">
             <%= link_to list.name, list_path(list), class: 'cat', style: "font-family: 'Lobster', cursive; font-size: 38px;" %>
-            <h3>5 films listed</h3>
+            <h3><%= @bookmarks.count %> movies listed</h3>
             <%= link_to "Delete",
               list_path(list),
               method: :delete,
