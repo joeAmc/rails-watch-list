@@ -13,7 +13,7 @@
   </div>
   <div class="main-body">
     <div class="header">
-      <h1>Categories</h1>
+      <h1>Genres</h1>
     <!-- Modal -->
     <!-- Button trigger modal -->
       <button class="plus" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -25,16 +25,16 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header" style="background-color: black;">
-            <h1 class="modal-title" id="exampleModalLabel" style="font-size: 32px; margin: 0px; color: white; height: 42px;">Add a new ategory</h1>
+            <h1 class="modal-title" id="exampleModalLabel" style="font-size: 32px; margin: 0px; color: white; height: 42px;">Add a genre</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="background-color: black;">
             <div class="text-start">
               <div class="form-list">
                 <%= simple_form_for (@list) do |f| %>
-                  <%= f.input :name %>
+                  <%= f.input :name, placeholder: 'genre' %>
                   <%= f.input :photo, as: :file %>
-                  <%= f.submit 'Submit', class: 'btn btn-outline-danger btn-sm mt-1' %>
+                  <%= f.submit 'Add', class: 'btn btn-outline-danger btn-sm mt-1' %>
                   <%= link_to 'Cancel', lists_path(@list), class: 'btn btn-outline-danger btn-sm mt-1' %>
                 <% end %>
               </div>
