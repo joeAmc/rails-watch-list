@@ -24,6 +24,9 @@
   text-decoration: none;
   background-color: rgb(3, 3, 3);
   box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    &:hover {
+      box-shadow: 0 0 10px rgba(129, 128, 128, 0.7);
+  }
 }
 
 .films img {

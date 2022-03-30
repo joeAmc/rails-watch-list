@@ -25,7 +25,7 @@
             <%= link_to "Delete",
                   bookmark_path(bookmark),
                   method: :delete,
-                  data: { confirm: "Are you sure?" }, class: 'btn btn-outline-danger btn-sm', style: 'position: absolute; margin-top: -8px;' %>
+                  data: { confirm: "Are you sure?" }, class: 'btn btn-outline-danger btn-sm' %>
           </div>
         </div>
       <% end %>
@@ -39,7 +39,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" style="background-color: black;">
-          <h1 class="modal-title" id="exampleModalLabel" style="font-size: 32px; margin: 0px; color: white; height: 42px;">Add a movie</h1>
+          <h1 class="modal-title" id="exampleModalLabel" style="font-size: 32px; margin: 0px; color: white; height: 42px; font-family: 'Lobster'">Add a movie</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" style="background-color: black;">
@@ -49,7 +49,7 @@
                 <%= f.association :movie, collection: Movie.all.order(:title), prompt: "Select a movie", input_html: { data: { controller: "slect2" } } %>
                 <%= f.input :comment, placeholder: 'Add your comments' %>
                 <%= f.input :photo, as: :file %>
-                <%= f.submit 'Add movie', class: 'btn btn-outline-danger btn-sm' %>
+                <%= f.submit 'Add movie', class: 'btn btn-outline-danger btn-sm mb-10px' %>
                 <%= link_to 'Cancel', list_path(@list), class: 'btn btn-outline-danger btn-sm' %>
               <% end %>
             </div>
