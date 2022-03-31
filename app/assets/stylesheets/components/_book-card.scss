@@ -29,8 +29,12 @@
   position: relative;
   a {
     position: absolute;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    bottom: 16px;
   }
+  &:hover {
+    box-shadow: 0 0 10px rgba(129, 128, 128, 0.7);
+}
 
 }
 

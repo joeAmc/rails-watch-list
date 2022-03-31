@@ -19,7 +19,13 @@
         <div class="bms">
           <%= cl_image_tag bookmark.photo.key %>
           <div class="bms-text">
-            <h4 style="font-family: 'Lobster', cursive; font-size: 38px; color: white;"><%= bookmark.movie.title %></h4>
+            <div class="title-rating">
+              <h4 style="font-family: 'Lobster', cursive; font-size: 38px; color: white;"><%= bookmark.movie.title %></h4>
+              <div class="rating">
+                <h3><%= "#{bookmark.movie.rating}/10" %></h3>
+                <%= image_tag "star", style: 'height: 22px; width: 22px; margin-bottom: 6px;'%>
+              </div>
+            </div>
             <p style="font-weight: 100;"><%= bookmark.movie.overview %></p>
             <p style="color: grey;">"<%= bookmark.comment %>"</p>
             <%= link_to "Delete",

@@ -70,3 +70,21 @@
    text-shadow: #f8dc95 1px 0 10px;
   }
 }
+
+.title-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem
+}
+
+
+.rating h3 {
+  margin-right: 8px;
+  margin-top: 4px;
+}
